@@ -1,0 +1,4 @@
+ls /bin/??
+#cd /bin
+#ls c??
+#cd -
