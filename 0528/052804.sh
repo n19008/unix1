@@ -1,1 +1,1 @@
-sudo du -b /var/* | sort -n | tac | head -n 5
+sudo find /var -type f | xargs du -b 2> /dev/null | sort -nr | head -n 5

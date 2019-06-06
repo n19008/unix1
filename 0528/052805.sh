@@ -1,1 +1,1 @@
-sudo du -b /var/* | grep -E '^0*' 2> /dev/null
+sudo find /var -type f | xargs du -b 2> /dev/null | grep  '^0*' 2> /dev/null
