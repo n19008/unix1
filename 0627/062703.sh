@@ -13,8 +13,8 @@ fi
 
 file=$1
 if [ -d "$file" ]; then
-    sudo find "$file" -type f | wc -l
-    sudo find "$file" -type d | wc -l
+    echo "file => $(sudo find "$file" -type f | wc -l)"
+    echo "directory => $(sudo find "$file" -type d | wc -l)"
 else
     echo "${file}:ディレクトリではありません"
 fi
